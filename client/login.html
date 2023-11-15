@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+						initial-scale=1.0">
+    <title>Login | Redstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="Images/logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id=menuItems>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html" target="_blank">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+                <img src="Images/cart.png" width="30px" height="30px" onclick="openCart()">
+                <img src="Images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <!-- container div -->
+    <div class="login-container">
+
+        <!-- upper button section to select
+			the login or signup form -->
+        <div class="slider"></div>
+        <div class="btn">
+            <button class="login">Login</button>
+            <button class="signup">Signup</button>
+        </div>
+
+        <!-- Form section that contains the
+			login and the signup form -->
+        <div class="form-section">
+
+            <!-- login form -->
+            <form action="https://devansh-redstore-server.onrender.com/login/" method="post" class="login-box">
+                <input id="email" name="email" type="email" class="email ele" placeholder="youremail@email.com">
+                <input id="password" name="password" type="password" class="password ele" placeholder="password">
+                <button type="submit" class="clkbtn">Login</button>
+            </form>
+
+            <!-- signup form -->
+            <form  action="https://devansh-redstore-server.onrender.com/register/" method="post" class="signup-box">
+                <input id="name" name="name" type="text" class="name ele" placeholder="Enter your name">
+                <input id="email" name="email" type="email" class="email ele" placeholder="youremail@email.com">
+                <input  type="password" class="password ele" placeholder="password">
+                <input id="password" name="password" type="password" class="password ele" placeholder="Confirm password">
+                <button type="submit"  class="clkbtn">Signup</button>
+            </form>
+        </div>
+    </div>
+    <!-- --------footer-------- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <p>Download App for Android as well as IOS Mobile Phone</p>
+                    <div class="app-logo">
+                        <img src="Images/play-store.png">
+                        <img src="Images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="Images/logo-white.png" alt="">
+                    <p>Our purpose is to sustainably make the pleasure and benifits of sports accessible
+                        to many.
+                    </p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 | Jayant Thakur</p>
+        </div>
+    </div>
+
+    <!-- some JavaScripts -->
+    <script src="index.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

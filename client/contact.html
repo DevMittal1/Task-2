@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US | Redstore </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="Images/logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id = menuItems>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html" target="_blank">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+                <img src="Images/cart.png" width = "30px" height="30px"
+                onclick="openCart()">
+                <img src="Images/menu.png" class = "menu-icon" onclick="menutoggle()">
+            </div>
+            
+        </div>
+    </div>
+    <!-- Header ends here -->
+	<!-- banner section -->
+	<section class="banner">
+		<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20230822131732/images.png"
+			alt="Welcome to our Contact Us page">
+		<h1>Get in Touch With Us</h1>
+		<p>We're here to answer any questions you may have.</p>
+	</section>
+
+    
+	<!-- Contact form -->
+	<section class="contact-form">
+        <!-- Company contact info -->
+	<div class="contact-info">
+		<h2>Contact Information</h2>
+		<address>
+			Devansh <br>
+			Nit Kurukshetra<br>
+			Kurukshetra, 136119<br>
+			Phone: <a href="tel:9992577136">99925-77136</a><br>
+			Email: <a href="mailto:devansh_12017112@nitkkr.ac.in">devansh_12017112@nitkkr.ac.in</a>
+		</address>
+	</div>
+		<div class="form-container">
+			<h2>Your Details</h2>
+			<form action="https://devansh-redstore-server.onrender.com/contact-us/" method="POST">
+
+				<label for="name">Name: </label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email: </label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="phone">Phone: </label>
+				<input type="tel" id="phone" name="phone">
+
+				<label for="message">Message: </label>
+				<textarea id="message" name="message" rows="4" required></textarea>
+
+				<button type="submit" class="submit-button">Submit</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- --------footer-------- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <p>Download App for Android as well as IOS Mobile Phone</p>
+                    <div class="app-logo">
+                        <img src="Images/play-store.png">
+                        <img src="Images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="Images/logo-white.png" alt="">
+                    <p>Our purpose is to sustainably make the pleasure and benifits of sports accessible
+                        to many.
+                    </p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 | Jayant Thakur</p>
+        </div>
+    </div>
+
+    <!-- some JavaScripts -->
+    <script src="index.js"></script>
+</body>
+
+</html>
